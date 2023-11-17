@@ -96,6 +96,7 @@
 .decorative-text {
   font-family: Platinum;
   text-align: left;
+  letter-spacing: -2px;
 }
 
 /* .terminal-body-commands * {

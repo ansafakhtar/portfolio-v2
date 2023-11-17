@@ -6,6 +6,7 @@ import './App.css'
 import FirstSection from './components/FirstSection/FirstSection'
 import ProjectsContainer from './components/Projects/ProjectContainer'
 import Terminal from './components/Terminal/Terminal'
+import Work from './components/Work/Work'
 import casette from './assets/retro.png'
 
 function App() {
@@ -29,11 +30,12 @@ function App() {
           display: "flex",
           placeContent: "center",
           padding: "50px",
-          backgroundColor: "#1d2524",
+          backgroundColor: "#000000",
         }}
       >
         <Terminal />
       </div>
+      <Work />
       <img
         src={casette}
         className="floating"

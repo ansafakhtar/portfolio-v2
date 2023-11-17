@@ -1,0 +1,66 @@
+/* .worksection-conatiner {
+    display: grid;
+
+} */
+
+.worksection-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #000000;
+  }
+  
+  .left-section {
+    /* background-color: #f0f0f0;  */
+
+  }
+  
+  .experience-section {
+    overflow-y: auto;
+    /* padding: 20px;  */
+    /* background-color: #171717; */
+    /* background-color: #000000; */
+  }
+  
+  .work-card {
+    display: grid;
+    grid-template-columns: 0.75fr 2fr;
+
+    /* border: 1px solid #ccc;
+    border-radius: 8px; */
+    padding: 10px 80px 10px 0px;
+    margin-bottom: 30px;
+  }
+
+  .work-duration {
+    color: #444444;
+    font-weight: 700;
+    padding-top: 3px;
+  }
+
+  .work-heading {
+    color: #da0037;
+    margin-bottom: 20px;
+  }
+  
+  .work-detail {
+    color: #ededed;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+  }  
+
+.skill-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+  .skill {
+    color: #da0037;
+    background-color: rgba(250, 123, 155, 0.354);
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin: 0px 10px 8px 0px;
+  }
