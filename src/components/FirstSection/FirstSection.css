@@ -1,0 +1,235 @@
+.effect {
+    color: #ededed;
+    font-size: 32px;
+    margin-top: 1em;
+}
+
+.div-effect {
+    animation: showup 7s infinite;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.div-effect2 {
+    text-align: center;
+    width: 0px;
+    animation: reveal 7s infinite;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.div-effect2 span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 355px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 355px;
+    }
+}
+
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.firstsection-container {
+    /* background-image: url('./images/ansaf-image.png') center center/cover
+    no-repeat; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+
+.firstsection-container>h1 {
+    color: #ededed;
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+.firstsection-container>p {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    color: #ededed;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+
+@media screen and (max-width: 960px) {
+    .firstsection-container>h1 {
+        font-size: 70px;
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .firstsection-container>h1 {
+        font-size: 50px;
+        margin-top: 80px;
+    }
+
+    .firstsection-container>p {
+        font-size: 30px;
+    }
+
+    .btn-mobile {
+        display: block;
+        text-decoration: none;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+
+/* //////////////////////// */
+
+/* *, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Montserrat, Helvetica, sans-serif;
+    background: url("bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* ////////////////WORKING/////////////////////////////////////// */
+/* .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 -100px ;
+    padding: 100px 0px 0;
+}
+.container-p {
+    text-transform: uppercase;
+    color: #222;
+    font-weight: 900;
+    color: transparent;
+    font-size: 0px;
+}
+p span {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    font-size: clamp(20px, 8vw, 50px);
+}
+p span::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+}
+p:nth-child(1) {
+    font-weight: 300;
+    animation: txt-appearance 0s 1s forwards;
+}
+p:nth-child(2) {
+    animation: txt-appearance 0s 1.25s forwards;
+}
+p:nth-child(1) span::after {
+    background: salmon;
+    animation: slide-in 0.75s ease-out forwards,
+    slide-out 0.75s 1s ease-out forwards;
+}
+p:nth-child(2) span::after {
+    background: royalblue;
+    animation: slide-in 0.75s 0.3s ease-out forwards,
+    slide-out 0.75s 1.3s ease-out forwards;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes slide-out {
+    100% {
+        transform: translateX(100%)
+    }
+}
+@keyframes txt-appearance {
+    100% {
+        color: #222;
+    }
+} */
