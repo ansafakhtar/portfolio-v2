@@ -43,14 +43,6 @@
   font-size: 100px;
 }
 
-.alien1 {
-  display: flex;
-  justify-content: flex-end;
-  z-index: 10;
-  position: absolute;
-  width: 99vw;
-}
-
 .alien2 {
   display: flex;
   justify-content: flex-start;
@@ -63,22 +55,7 @@
   position: relative;
   left: 0;
   transform: scaleX(-1);
-  top: 325px;
-}
-
-.floating { 
-	animation-name: floating;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	margin-left: 30px;
-	margin-top: 5px;
-}
-
-@keyframes floating {
-	0% { transform: translate(0, 0px); }
-	50% { transform: translate(0, 15px); }
-	100% { transform: translate(0, -0px); } 
+  top: 125px;
 }
 
 @font-face {

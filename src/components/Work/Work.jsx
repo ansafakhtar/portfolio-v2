@@ -1,5 +1,8 @@
 import "./Work.css";
-import casette from '../../assets/retro.png'
+// import casette from '../../assets/retro.png';
+// import Sphere from '../Animation/Sphere';
+import CircleAnimation from '../Animation/CircleAnimation';
+import { TypeAnimation } from 'react-type-animation';
 
 const work = () => {
 
@@ -7,13 +10,33 @@ const work = () => {
         <>
         <div className="worksection-container">
         <div className="left-section">
-            <h1>Test</h1>
-            <img
-        src={casette}
-        className="floating"
-        alt="Retro Casette"
-        style={{ width: "300px", height: "300px" }}
-      />
+            <div style={{display:"flex"}}>
+            {/* <img src="https://media.giphy.com/media/kReKcfrs1YoTmt2AQt/giphy.gif" className="alien-gif" width="222" frameBorder="0"/>          */}
+            <h2 style={{padding:"80px 0px 150px 10%", color:"#da0037"}}>
+                <TypeAnimation
+                    preRenderFirstString={true}
+                    sequence={[
+                        'My',
+                        500,
+                        'My Work',
+                        500,
+                        'My Work Experience',
+                        500,
+                        'My Work',
+                        500,
+                        'My',
+                        500,
+                        '',
+                        500,
+                    ]}
+                    speed={50}
+                    style={{ fontSize: '1.5em' }}
+                    repeat={Infinity}
+                />
+            </h2>
+            </div>
+            <div style={{width: "100%", display:"flex", placeContent:"center"}}><CircleAnimation /></div>
+            {/* <div style={{width: "100%"}}><Sphere /></div>             */}
         </div>
 
             <div className="experience-section">
