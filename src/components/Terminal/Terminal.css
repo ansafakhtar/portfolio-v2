@@ -22,10 +22,11 @@
     background: var(--terminalBackground);
     border-radius: var(--terminalBorder);
     border: 2px solid var(--terminalBorderColour);
-    box-shadow: 0 .5em 1em 1em rgba(0, 0, 0, .5);
+    box-shadow: 0 .5em 1em 1em rgba(34, 34, 34, 0.5);
     font-family: monaco, Consolas, Lucida Console, monospace;
     width: 45vw;
     max-width: 45vw;
+    font-weight: 700;
 
 .terminal-header {
     background: var(--terminalHeader);
@@ -67,8 +68,7 @@
 .terminal-body {
     padding: 1em;
     color: var(--terminalText);
-    height: 50vh;
-    min-height: 30em;
+    height:480px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -165,3 +165,21 @@
     top: .25em;
     left: 1em;
   } */
+
+  .floating-casette { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: 440px;
+    right: 20px;
+  }
+
+  @keyframes floating {
+    0% { transform: translate(0, 0px); }
+    50% { transform: translate(0, 35px); }
+    100% { transform: translate(0, -0px); } 
+  }  

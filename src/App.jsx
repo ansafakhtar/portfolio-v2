@@ -8,6 +8,7 @@ import ProjectsContainer from './components/Projects/ProjectContainer'
 import Terminal from './components/Terminal/Terminal'
 import Footer from './components/Footer/Footer'
 import Work from './components/Work/Work'
+import Carousel from './components/Carousel/Carousel'
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
 
 
       {/* <FirstSection /> */}
+      <Carousel />
       <ProjectsContainer />
       <Footer />
     </>

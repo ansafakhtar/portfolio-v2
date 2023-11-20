@@ -1,4 +1,5 @@
 import "./Terminal.css";
+import casette from "../../assets/retro.png"
 import { useState, useRef, useEffect } from 'react';
 
 const aboutMe = (<>
@@ -9,7 +10,7 @@ const aboutMe = (<>
       <li className="is-rainbow-red">✅ Web Developer</li>
       <li className="is-rainbow-orange">✅ ReactJS Specialist</li>
       <li className="is-rainbow-yellow">✅ JavaScript Expert</li>
-      <li className="is-rainbow-green">✅ ECE Engineer</li>
+      {/* <li className="is-rainbow-green">✅ ECE Engineer</li> */}
       <li className="is-rainbow-blue">✅ Designer</li>
       <li className="is-rainbow-violet">
         ✅ Football Fanatic ⚽ (Hala Madrid!){" "}
@@ -192,7 +193,7 @@ const Terminal = () => {
 
   return (
     // <div style={{display: "flex", placeContent: "center", padding: "50px", backgroundColor:"#1d2524" }}>
-      <div style={{zIndex:"11"}}>
+    <div style={{zIndex:"11", display:"flex"}}>
       <div id="terminal">
         <header className="terminal-header">
           <div className="terminal-header-buttons">
@@ -260,7 +261,12 @@ const Terminal = () => {
         </div>
         </div>
       </div>
-
+      
+      <img
+          src={casette}
+          className="floating-casette"
+          alt="Retro Casette"
+      />
     </div>
   );
 };
