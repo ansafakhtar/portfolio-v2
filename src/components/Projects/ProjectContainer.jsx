@@ -1,6 +1,3 @@
-// import React from 'react';
-// import {Link} from 'react-router-dom';
-
 import CardItem from './CardItem';
 import './ProjectsContainer.css';
 import { TypeAnimation } from 'react-type-animation';
