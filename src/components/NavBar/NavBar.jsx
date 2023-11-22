@@ -22,7 +22,7 @@ useEffect(() => {
 },[]);    
 
     const onButtonClick = () => {
-             fetch("resume.pdf").then((response) => {
+             fetch("Ansaf-Resume.pdf").then((response) => {
             response.blob().then((blob) => {
                 // Creating new object of PDF file
                 const fileURL =
@@ -30,7 +30,7 @@ useEffect(() => {
                 // Setting various property values
                 let alink = document.createElement("a");
                 alink.href = fileURL;
-                alink.download = "resume.pdf";
+                alink.download = "Ansaf-Resume.pdf";
                 alink.click();
             });
         });
