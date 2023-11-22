@@ -1,6 +1,6 @@
 import {useState,useEffect} from 'react';
 import  {Button}  from '../Button/Button';
-import './Navbar.css';
+import './NavBar.css';
 
 function Navbar() {
     const [click, setClick] = useState(false);
