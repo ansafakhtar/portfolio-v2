@@ -42,7 +42,7 @@ function ProjectsContainer() {
                 path='https://clickandbuy-webstore.netlify.app/'
               />
               <CardItem
-                src='src/assets/contact-book.jpg'
+                src='/contact-book.jpg'
                 text='Simple contact book app made using react and redux'
                 label='Utility'
                 path='https://react-redux-contact-book.vercel.app/'
