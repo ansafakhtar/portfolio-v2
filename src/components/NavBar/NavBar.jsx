@@ -1,5 +1,4 @@
 import {useState,useEffect} from 'react';
-import {Link} from 'react-router-dom';
 import  {Button}  from '../Button/Button';
 import './Navbar.css';
 
@@ -22,42 +21,47 @@ useEffect(() => {
     showButton();
 },[]);    
 
+    const onButtonClick = () => {
+             fetch("resume.pdf").then((response) => {
+            response.blob().then((blob) => {
+                // Creating new object of PDF file
+                const fileURL =
+                    window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement("a");
+                alink.href = fileURL;
+                alink.download = "resume.pdf";
+                alink.click();
+            });
+        });
+    };
+
 window.addEventListener('resize', showButton);
 
     return (
         <>    
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                        
+                    <a href="#root" className='navbar-logo' onClick={closeMobileMenu}>
                         <img className="nav-logo" alt='Nav Logo' src="/nav-logo.png"/>
-                    </Link>
+                        </a>
                     <div className="menu-icon" onClick={handleClick}>
-                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                        <i className={click ? 'fa fa-times' : 'fa fa-bars'} />
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                        Home
-                        </Link>
+                        <a href="#root" className='nav-links' onClick={closeMobileMenu}>Home</a>
                     </li>
-                    <li className='nav-item'>
-                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                        Services
+                    {/* <li className='nav-item'>
+                        <Link to='/contact' className='nav-links' onClick={closeMobileMenu}>
+                        Contact
                         </Link>
-                    </li>
+                    </li> */}
                     <li className='nav-item'>
-                        <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                        Products
-                        </Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to='/sign-up' className='nav-links' onClick={closeMobileMenu}>
-                        Sign Up
-                        </Link>
+                        <a href="#project-cards" className='nav-links' onClick={closeMobileMenu}>Projects</a>
                     </li>
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+                    {button && <Button buttonStyle='btn--outline' onClick={onButtonClick}>RESUME</Button>}
                 </div>
             </nav>
         </>
