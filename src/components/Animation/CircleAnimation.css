@@ -28,6 +28,9 @@
     transform: translateX(0) translateY(0);
     height: 400px;
     width: 400px;
+    bottom: 40%;
+    left: 10%;
+    position: absolute;
   }
   .animation-example > .item {
     position: absolute;
@@ -175,3 +178,11 @@
     background: #DA0037;
   }
   
+
+  @media screen and (max-width: 960px) {
+    .animation-example {
+      transform: translateX(0) translateY(0);
+      height: 200px;
+      width: 200px;
+    }
+  }

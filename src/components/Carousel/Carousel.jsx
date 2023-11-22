@@ -12,16 +12,29 @@ import { TypeAnimation } from 'react-type-animation';
 const Carousel = () => {
 
     return (
-        <div style={{overflow:"hidden", height:"700px", backgroundColor:"#000"}}>
-            <div style={{display:"flex", justifyContent:"center"}}>
+        <div style={{overflow:"hidden", height:"1000px", backgroundColor:"#000"}}>
+            <div style={{display:"flex", justifyContent:"center", marginBottom:"-50px", paddingTop:"30px"}}>
                 <TypeAnimation
-                    sequence={['Some of My Design Projects',1000,]}
+                    sequence={[
+                        'Some',
+                        500,
+                        'Some of My',
+                        500,
+                        'Some of My Design Projects',
+                        500,
+                        'Some of My',
+                        500,
+                        'Some',
+                        500,
+                        '',
+                        500,
+                    ]}
                     speed={50}
                     style={{ fontSize: '2em', color:"#DA0037" }}
                     repeat={Infinity}
                     />
             </div>
-        <div className="container">
+        <div className="carousel-container">
             <aside className="carousel">
                 <div className="carousel__wrapper">
                     <div className="item" id="slide-0"><img src={img1} alt="Cake Me Away Logo" width="418" height="418" /></div>

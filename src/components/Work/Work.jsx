@@ -1,5 +1,4 @@
 import "./Work.css";
-// import casette from '../../assets/retro.png';
 // import Sphere from '../Animation/Sphere';
 import CircleAnimation from '../Animation/CircleAnimation';
 import { TypeAnimation } from 'react-type-animation';
@@ -10,9 +9,8 @@ const work = () => {
         <>
         <div className="worksection-container">
         <div className="left-section">
-            <div style={{display:"flex"}}>
-            {/* <img src="https://media.giphy.com/media/kReKcfrs1YoTmt2AQt/giphy.gif" className="alien-gif" width="222" frameBorder="0"/>          */}
-            <h2 style={{padding:"80px 0px 150px 10%", color:"#da0037"}}>
+            <div style={{display:"flex", flexDirection:"column"}}>
+            <h2 style={{padding:"80px 0px 50px 10%", color:"#da0037"}}>
                 <TypeAnimation
                     preRenderFirstString={true}
                     sequence={[
@@ -34,8 +32,9 @@ const work = () => {
                     repeat={Infinity}
                 />
             </h2>
+            <img src="https://media.giphy.com/media/kReKcfrs1YoTmt2AQt/giphy.gif" className="alien-gif" width="222" frameBorder="0"/>         
             </div>
-            <div style={{width: "100%", display:"flex", placeContent:"center"}}><CircleAnimation /></div>
+            <div style={{width: "100%", height: "50%", display:"flex", placeContent:"center", position:"relative"}}><CircleAnimation /></div>
             {/* <div style={{width: "100%"}}><Sphere /></div>             */}
         </div>
 

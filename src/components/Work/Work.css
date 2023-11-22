@@ -3,19 +3,6 @@
     grid-template-columns: 0.75fr 1fr;
     background-color: #000000;
   }
-  
-  .left-section {
-    /* background-color: #f0f0f0;  */
-    height: fit-content;
-  }
-
-  /* .alien-img {
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    width: 99vw;
-    transform: scaleX(-1);
-  } */
 
   .alien-gif {
     transform: scaleX(-1);

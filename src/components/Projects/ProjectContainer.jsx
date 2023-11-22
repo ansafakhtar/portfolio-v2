@@ -3,51 +3,72 @@
 
 import CardItem from './CardItem';
 import './ProjectsContainer.css';
+import { TypeAnimation } from 'react-type-animation';
 
 function ProjectsContainer() {
     return (
-        <div className='cards'>
-        <h1>Check out my projects!</h1>
+        <div className='cards' id='project-cards'>
+        <div style={{display:"flex", justifyContent:"center"}}>
+          <TypeAnimation
+              sequence={[
+                  'Some',
+                  500,
+                  'Some of My',
+                  500,
+                  'Some of My Coding Projects',
+                  500,
+                  'Some of My',
+                  500,
+                  'Some',
+                  500,
+                  '',
+                  500,
+              ]}
+              speed={50}
+              style={{ fontSize: '2em', color:"#DA0037", fontWeight:"700" }}
+              repeat={Infinity}
+              />
+        </div>
         <div className='cards__container'>
           <div className='cards__wrapper'>
             <ul className='cards__items'>
               <CardItem
-                src='images/Untitled-2-01.png'
+                src='src/assets/RecipePlus.png'
                 text='Explore unique food recipes with the help of the Recipe Search+ App'
                 label='Food'
                 path='https://recipesearchplus.netlify.app/'
               />
               <CardItem
-                src='images/img-2.jpg'
-                text='Travel through the Islands of Bali in a Private Cruise'
-                label='Luxury'
-                path='/services'
+                src='src/assets/Untitled-6-01.png'
+                text='Online shopping store'
+                label='Shopping'
+                path='https://clickandbuy-webstore.netlify.app/'
               />
               <CardItem
-                src='images/img-2.jpg'
-                text='Travel through the Islands of Bali in a Private Cruise'
-                label='Luxury'
-                path='/services'
+                src='src/assets/contact-book.jpg'
+                text='Simple contact book app made using react and redux'
+                label='Utility'
+                path='https://react-redux-contact-book.vercel.app/'
               />
             </ul>
             <ul className='cards__items'>
               <CardItem
-                src='images/img-3.jpg'
-                text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
-                label='Mystery'
-                path='/services'
+                src='src/assets/minion.jpg'
+                text='Simple minionese language translator app'
+                label='Game'
+                path='https://minionesetranslatorapp.netlify.app/'
               />
               <CardItem
-                src='images/img-4.jpg'
-                text='Experience Football on Top of the Himilayan Mountains'
-                label='Adventure'
-                path='/products'
+                src='src/assets/quiz.jpg'
+                text='Basic command line interface (CLI) quiz app made using Node js'
+                label='Game'
+                path='https://replit.com/@AnsafAkhtar/First-Lesson-CLI-Quiz?embed=1&output'
               />
               <CardItem
-                src='images/img-8.jpg'
-                text='Ride through the Sahara Desert on a guided camel tour'
-                label='Adrenaline'
-                path='/sign-up'
+                src='src/assets/portfolio.jpg'
+                text='First portfolio made using HTML and CSS'
+                label='Portfolio'
+                path='https://ansaf-portfolio.netlify.app'
               />
             </ul>
           </div>
