@@ -65,6 +65,10 @@
 }
 }
 
+.terminal-body-commands::-webkit-scrollbar {
+  display: none;
+}
+
 .terminal-body {
     padding: 1em;
     color: var(--terminalText);
